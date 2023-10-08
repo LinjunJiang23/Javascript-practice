@@ -1,0 +1,38 @@
+.title {
+	background-color: #C5CEF0;
+	color: #415FD1;
+}
+body {
+	font-size: 20px;
+	font-family: Courier, monospace;
+	color: white;
+	background-color: #C5CEF0;
+}
+section {
+	background-image: url("background.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center;
+	height: 60%;
+	display: grid;
+	grid-template-areas: 
+	"lb lb lb lb lb lb"
+	"tm tm tm tm tm tm"
+	"ct ct ct ct bt bt"
+}
+
+#custom-time {
+	text-align: center;
+	position: static;
+	margin: 100px;
+	border-image: url("border.jpg");
+	border-width: 15px;
+	grid-area: lb;
+}
+
+#timer:
+{
+	grid-area: tm;
+	font-size: 36px;
+	text-align: center;
+}
