@@ -1,38 +1,56 @@
-.title {
-	background-color: #C5CEF0;
-	color: #415FD1;
+h1 {
+	grid-area: hd;
 }
 body {
-	font-size: 20px;
+	font-size: 30px;
+	color: #415FD1;
+	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-width: 1px;
 	font-family: Courier, monospace;
-	color: white;
 	background-color: #C5CEF0;
+	text-align: center;
 }
 section {
 	background-image: url("background.jpg");
-	background-repeat: repeat;
 	background-attachment: fixed;
-	background-position: center;
-	height: 60%;
+	background-size: auto;
 	display: grid;
-	grid-template-areas: 
-	"lb lb lb lb lb lb"
+	grid-template-areas:
+        "hd hd hd hd hd hd"	
 	"tm tm tm tm tm tm"
-	"ct ct ct ct bt bt"
+	"ct ct ct ct sa st";
 }
 
 #custom-time {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	grid-area: ct;
+	font-size: 30px;
 	text-align: center;
-	position: static;
-	margin: 100px;
-	border-image: url("border.jpg");
-	border-width: 15px;
-	grid-area: lb;
 }
 
 #timer:
 {
 	grid-area: tm;
-	font-size: 36px;
 	text-align: center;
+}
+
+button {
+	position: static;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: white;
+	font-size: 30px;
+}
+
+#start {
+	grid-area: sa;
+}
+
+#stop {
+	grid-area: st;
+}
+
+hr {
+	width: 75%;
 }
